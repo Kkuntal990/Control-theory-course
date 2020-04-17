@@ -28,10 +28,10 @@ By using,
 \end{align}
 
 \begin{align}
-\implies X(s) = (1/ \pi)( \frac{\pi}{2} - \taninv(s))
+\implies X(s) = (1/ \pi)( \frac{\pi}{2} - \tan^{-1}(s))
 \end{align}
 \begin{align}
-\implies Y(s) = (1/ \pi s) ( \frac{\pi}{2} - \taninv(s)) 
+\implies Y(s) = (1/ \pi s) ( \frac{\pi}{2} - \tan^{-1}(s)) 
 \end{align}
 since 
 \begin{align}
@@ -39,16 +39,15 @@ Y(s) = X(s)H(s)
 \end{align}
 Then using Final Value theorem,
 \begin{align}
-y(\infty) = \lim_{s\to 0} sY(s) =(\frac{1}{\pi}) ( \frac{\pi}{2} - \taninv(s)) = \frac{1}{2}
+y(\infty) = \lim_{s\to 0} sY(s) =(\frac{1}{\pi}) ( \frac{\pi}{2} - \tan^{-1}) = \frac{1}{2}
 \end{align}
 
 
 
 
 
-\item Proof of Final Value Theorem:
+\textbf{ Proof of Final Value Theorem:}
 
-\solution
 To prove : 
 \begin{align}
  \lim_{s\to\ 0} (s*F(s)) = \lim_{t\to\infty} f(t)
@@ -70,13 +69,12 @@ And
 Hence proved
 \newline
 \newline
-
-\item Plotting y(t) in time domain.
+\textbf{Plotting y(t) in time domain.}
 \begin{lstlisting}
 https://github.com/Kkuntal990/Control-theory-course/blob/master/codes/EE18BTECH11028.py
 \end{lstlisting}
 \begin{figure}[!h]
-  \includegraphics[width=\columnwidth]{./figs/EE18BTECH11028.eps}
+  \includegraphics[width=\columnwidth]{EE18BTECH11028.eps}
 \end{figure}
 
 This shows as $t$ goes to infinity $y(t)$ tends to 0.5.
